@@ -1,0 +1,716 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to left, rgb(6, 6, 83), rgb(44, 43, 39));
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav {
+    min-height: 60px;
+    width: 100%;
+    background-color: rgba(4, 18, 43, 0.95);
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 30px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: orange;
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navmenu {
+    display: flex;
+    margin-left: auto;
+    gap: 45px;
+    align-items: center;
+    font-size: 19px;
+}
+
+.navmenu a {
+    text-decoration: none;
+    color: orange;
+    transition: 0.3s;
+}
+
+.navmenu a:hover {
+    color: white;
+}
+
+.icon {
+    color: white;
+    font-size: 20px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+
+/* ================= SECTION ================= */
+
+section {
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+
+/* ================= HOME ================= */
+
+.homepage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+    padding: 60px 6%;
+}
+
+.home {
+    color: white;
+    max-width: 650px;
+}
+
+.home p {
+    color: orange;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.home h1 {
+    font-size: clamp(42px, 5vw, 65px);
+    line-height: 1.1;
+}
+
+.home span {
+    color: orange;
+}
+
+.home h2 {
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.btndiv {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+
+    transition: 0.3s;
+}
+
+.btn1 {
+    background-color: orange;
+}
+
+.btn2 {
+    border: 1px solid orange;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+
+
+/* ================= IMAGE BOX ================= */
+
+.img {
+    background: linear-gradient(
+        to left,
+        rgb(6, 6, 83),
+        rgb(44, 43, 39)
+    );
+
+    height: 350px;
+    width: 500px;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.craneicn {
+    font-size: 150px;
+    color: orange;
+}
+
+.img h1 {
+    color: white;
+}
+
+.img h4 {
+    color: white;
+    margin-top: 10px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.main {
+    background: linear-gradient(
+        135deg,
+        #19305a,
+        #0d1b35
+    );
+
+    color: white;
+
+    width: 90%;
+    max-width: 1100px;
+
+    min-height: 450px;
+
+    margin: 30px auto;
+    padding: 55px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.tag p {
+    color: orange;
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.tag h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 60px;
+}
+
+.tag span {
+    color: orange;
+}
+
+
+/* ================= ABOUT CONTENT ================= */
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.expabout {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.exp {
+    color: orange;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.exp sub {
+    font-size: 35px;
+}
+
+.line {
+    width: 2px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.experience-text h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.experience-text h3 {
+    color: #d5d9e2;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+
+/* ================= HEADINGS ================= */
+
+.heading {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.heading p {
+    color: orange;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.heading h1 {
+    color: white;
+    margin-top: 10px;
+}
+
+.heading span {
+    color: orange;
+}
+
+.head1,
+.bookhead {
+    margin-left: 0;
+}
+
+
+/* ================= SERVICES ================= */
+
+.serbox {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    padding: 20px 5%;
+    flex-wrap: wrap;
+}
+
+.box {
+    border-radius: 20px;
+
+    min-height: 460px;
+    width: 350px;
+
+    color: white;
+
+    border: 1px solid rgb(100, 100, 99);
+
+    transition: 0.3s;
+}
+
+.box:hover {
+    border: 1px solid orange;
+    transform: translateY(-8px);
+}
+
+.service1 {
+    color: white;
+    padding: 45px 35px;
+}
+
+.boxicon {
+    color: orange;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.service1 h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.service1 p {
+    line-height: 1.6;
+    color: #d5d9e2;
+    margin-bottom: 20px;
+}
+
+.service1 ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: white;
+}
+
+.service1 li {
+    margin-bottom: 12px;
+}
+
+.serimg {
+    height: 100px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* BOOK NOW */
+
+.serbtn {
+    display: inline-flex;
+
+    height: 40px;
+    width: 110px;
+
+    background-color: orange;
+
+    border-radius: 30px;
+    border: none;
+
+    color: black;
+    text-decoration: none;
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+.serbtn:hover {
+    transform: scale(1.05);
+}
+
+
+/* ================= BOOKING ================= */
+
+.forms {
+    margin: 20px auto;
+
+    min-height: 450px;
+    width: 90%;
+    max-width: 900px;
+
+    border: 1px solid rgb(128, 127, 126);
+
+    border-radius: 20px;
+
+    background-color: rgb(42, 42, 67);
+
+    padding: 35px;
+}
+
+.mainform {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.formbox {
+    width: 50%;
+}
+
+label {
+    display: block;
+
+    font-size: 17px;
+    color: white;
+
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+input,
+select {
+    height: 42px;
+    width: 100%;
+
+    border-radius: 10px;
+    border: none;
+
+    padding: 0 15px;
+
+    color: white;
+    background-color: #0d1b35;
+
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border: 1px solid orange;
+}
+
+select option {
+    background-color: #0d1b35;
+}
+
+.subbtn {
+    display: block;
+
+    height: 55px;
+    width: 220px;
+
+    border-radius: 40px;
+    border: 1px solid rgb(151, 150, 148);
+
+    background-color: orange;
+    color: black;
+
+    margin: 45px auto 0;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.subbtn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .navmenu {
+        gap: 25px;
+        font-size: 17px;
+    }
+
+    .homepage {
+        padding: 50px 5%;
+        gap: 30px;
+    }
+
+    .home h1 {
+        font-size: 45px;
+    }
+
+    .img {
+        width: 400px;
+        height: 320px;
+    }
+
+    .craneicn {
+        font-size: 120px;
+    }
+
+    .main {
+        width: 92%;
+        padding: 40px;
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    .mainform {
+        gap: 20px;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    /* NAVBAR */
+
+    nav {
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .icon {
+        margin-left: auto;
+    }
+
+    .navmenu {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        margin-top: 15px;
+
+        gap: 18px;
+
+        font-size: 15px;
+    }
+
+
+    /* HOME */
+
+    .homepage {
+        flex-direction: column;
+        text-align: center;
+
+        padding: 50px 20px;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .home h2 {
+        font-size: 17px;
+    }
+
+    .btndiv {
+        justify-content: center;
+    }
+
+    .img {
+        width: 100%;
+        max-width: 450px;
+        height: 280px;
+    }
+
+    .craneicn {
+        font-size: 100px;
+    }
+
+
+    /* ABOUT */
+
+    .main {
+        width: 92%;
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    .tag h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .exp {
+        font-size: 65px;
+    }
+
+    .line {
+        height: 80px;
+    }
+
+    .experience-text h2 {
+        font-size: 21px;
+    }
+
+    .experience-text h3 {
+        font-size: 15px;
+    }
+
+
+    /* SERVICES */
+
+    .serbox {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    /* BOOKING */
+
+    .forms {
+        width: 92%;
+        padding: 25px 20px;
+    }
+
+    .mainform {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .formbox {
+        width: 100%;
+    }
+
+    .subbtn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .navmenu {
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .home h1 {
+        font-size: 34px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .img {
+        height: 250px;
+    }
+
+    .craneicn {
+        font-size: 80px;
+    }
+
+    .tag h1 {
+        font-size: 26px;
+    }
+
+    .forms {
+        padding: 20px 15px;
+    }
+
+}
+

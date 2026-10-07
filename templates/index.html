@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sai Crane Services</title>
+
+    <!-- Flask CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+
+        <div class="logo">
+            Sai Crane Services
+        </div>
+
+        <div class="navmenu">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#book">Book</a>
+        </div>
+
+        <div class="icon">
+            <i class="fa-regular fa-moon"></i>
+        </div>
+
+    </nav>
+
+
+    <!-- HOME -->
+    <section id="home" class="homepage">
+
+        <div class="home">
+
+            <p>Sai Crane Services</p>
+
+            <h1>
+                Your Trusted <br>
+                <span>Crane Rental</span><br>
+                Partner
+            </h1>
+
+            <h2>
+                Reliable Crane & JCB Services for <br>
+                Every Project
+            </h2>
+
+            <div class="btndiv">
+                <a href="#services" class="btn btn1">
+                    Explore Services
+                </a>
+
+                <a href="#book" class="btn btn2">
+                    Book a Service
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="img">
+
+            <div class="imgicn">
+
+                <div class="craneicn">
+                    <i class="fa-solid fa-person-digging"></i>
+                </div>
+
+                <h1>Crane & JCB</h1>
+
+                <h4>
+                    Professional Heavy Equipment Services
+                </h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <div class="main">
+
+            <div class="tag">
+
+                <p>ABOUT SAI CRANE SERVICES</p>
+
+                <h1>
+                    Experience That <span>Moves</span><br>
+                    Every Project Forward
+                </h1>
+
+            </div>
+
+
+            <div class="about">
+
+                <div class="expabout">
+
+                    <div class="exp">
+                        12<sub>+</sub>
+                    </div>
+
+                    <div class="line"></div>
+
+                </div>
+
+
+                <div class="experience-text">
+
+                    <h2>
+                        Years of Industry Experience
+                    </h2>
+
+                    <h3>
+                        Reliable crane and lifting solutions backed by
+                        safety, precision and dependable service.
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+    <section id="services">
+
+        <div class="servicesmain">
+
+            <div class="heading">
+
+                <p class="head">
+                    OUR SERVICES
+                </p>
+
+                <h1 class="head1">
+                    Equipment For Every <span>Project</span>
+                </h1>
+
+            </div>
+
+
+            <div class="serbox">
+
+                <!-- JCB -->
+                <div class="box">
+
+                    <div class="service1">
+
+                        <i class="fa-solid fa-tractor boxicon"></i>
+
+                        <h3>JCB Services</h3>
+
+                        <p>
+                            Powerful JCB services for construction
+                            and earth work.
+                        </p>
+
+                        <ul>
+                            <li>Site Cleaning</li>
+                            <li>Digging</li>
+                            <li>Earth Moving</li>
+                            <li>Construction Support</li>
+                        </ul>
+
+                        <a href="#book" class="serbtn">
+                            Book Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CRANE -->
+                <div class="box">
+
+                    <div class="service1">
+
+                        <img class="serimg" src="{{ url_for('static', filename='1.jpg') }}"
+                            alt="Crane">
+
+                        <h3>Crane Services</h3>
+
+                        <p>
+                            Reliable crane services for lifting
+                            and material shifting.
+                        </p>
+
+                        <ul>
+                            <li>Heavy Lifting</li>
+                            <li>Material Shifting</li>
+                            <li>Construction Assistance</li>
+                        </ul>
+
+                        <a href="#book" class="serbtn">
+                            Book Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HEAVY CRANE -->
+                <div class="box">
+
+                    <div class="service1">
+
+                        <i class="fa-solid fa-tractor boxicon"></i>
+
+                        <h3>
+                            Heavy / Long Reach <br>
+                            Crane
+                        </h3>
+
+                        <p>
+                            Heavy equipment support for demanding
+                            construction projects.
+                        </p>
+
+                        <ul>
+                            <li>High-Rise Projects</li>
+                            <li>Long Reach Lifting</li>
+                            <li>Heavy Material Handling</li>
+                        </ul>
+
+                        <a href="#book" class="serbtn">
+                            Book Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOKING -->
+    <section id="book">
+
+        <div class="heading">
+
+            <p class="head">
+                BOOK YOUR SERVICE
+            </p>
+
+            <h1 class="bookhead">
+                Request a <span>Crane</span>
+            </h1>
+
+        </div>
+
+
+        <div class="forms">
+
+            <!-- IMPORTANT: /book -->
+            <form action="/book" method="POST">
+
+                <div class="mainform">
+
+                    <div class="formbox">
+
+                        <label>Customer Name</label>
+
+                        <input type="text"
+                            name="name"
+                            placeholder="Enter your name"
+                            required>
+
+
+                        <label>Email</label>
+
+                        <input type="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+
+
+                        <label>Location</label>
+
+                        <input type="text"
+                            name="location"
+                            placeholder="Your project location"
+                            required>
+
+                    </div>
+
+
+                    <div class="formbox">
+
+                        <label>Mobile Number</label>
+
+                        <input type="tel"
+                            name="mobile"
+                            placeholder="Your phone number"
+                            required>
+
+
+                        <label>Select Service</label>
+
+                        <select name="service" required>
+
+                            <option value="">
+                                Choose your service
+                            </option>
+
+                            <option value="JCB Services">
+                                JCB Services
+                            </option>
+
+                            <option value="Crane Services">
+                                Crane Services
+                            </option>
+
+                            <option value="Heavy / Long Reach Crane">
+                                Heavy / Long Reach Crane
+                            </option>
+
+                        </select>
+
+
+                        <label>Date</label>
+
+                        <input type="date"
+                            name="date"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <button class="subbtn" type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
