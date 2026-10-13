@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saved Bookings</title>
+</head>
+<body>
+
+    <h2>Saved Bookings</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Location</th>
+            <th>Mobile</th>
+            <th>Service</th>
+            <th>Date</th>
+        </tr>
+
+        {% for user in users %}
+        <tr>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.location }}</td>
+            <td>{{ user.mobile }}</td>
+            <td>{{ user.service }}</td>
+            <td>{{ user.date }}</td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="6">No bookings found.</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/">Back to Home</a>
+
+</body>
+</html>
