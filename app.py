@@ -71,13 +71,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "anju")
 
-# Local computer par data.db; Render par /var/data/data.db
-if os.environ.get("RENDER"):
-    db_path = "/var/data/data.db"
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:////var/data/data.db"
-else:
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
-
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
 db = SQLAlchemy(app)
 
 
